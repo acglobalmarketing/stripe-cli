@@ -15,4 +15,70 @@
     "[go]": {
         "editor.formatOnSave": true
     },
+    "search.useGlobalIgnoreFiles": true,
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "html.format.unformatted": "",
 }
+"id": "po_1J81QHIwrPLAhbrNCQZnlkdZ",
+"object": "payout",
+"amount": 1100,
+"arrival_date": 1625051861,
+"automatic": true,
+"balance_transaction": "txn_1J81QHIwrPLAhbrN52GBZLaC",
+"created": 1625051861,
+"currency": "myr",
+"description": "STRIPE PAYOUT",
+"destination": "ba_1J81QHIwrPLAhbrNugmEWlaK",
+"failure_balance_transaction": null,
+"failure_code": null,
+"failure_message": null,
+"livemode": false,
+"metadata": {},
+"method": "standard",
+"original_payout": null,
+"reversed_by": null,
+"source_type": "card",
+"statement_descriptor": null,
+"status": "in_transit",
+"type": "bank_account"
+}
+"id": "po_1J81QHIwrPLAhbrNCQZnlkdZ",
+"object": "payout",
+"amount": 1100,
+"arrival_date": 1625051861,
+"automatic": true,
+"balance_transaction": "txn_1J81QHIwrPLAhbrN52GBZLaC",
+"created": 1625051861,
+"currency": "myr",
+"description": "STRIPE PAYOUT",
+"destination": "ba_1J81QHIwrPLAhbrNugmEWlaK",
+"failure_balance_transaction": null,
+"failure_code": null,
+"failure_message": null,
+"livemode": false,
+"metadata": {},
+"method": "standard",
+"original_payout": null,
+"reversed_by": null,
+"source_type": "card",
+"statement_descriptor": null,
+"status": "in_transit",
+"type": "bank_account"
+}
+paymentRequest.canMakePayment().then(result => {
+  if (result) {
+    // Mount paymentRequestButtonElement to the DOM
+  }
+
+  var paymentRequest = stripe.paymentRequest({
+  country: 'US',
+  currency: 'usd',
+  total: {
+    label: 'Demo total',
+    amount: 1000,
+    },
+  requestPayerName: true,
+  requestPayerEmail: true,
+  });
+  

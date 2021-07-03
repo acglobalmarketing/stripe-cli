@@ -4,6 +4,204 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach",
+        "pipeTransport": {
+          "pipeCwd": "${workspaceFolder}",
+          "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+          "pipeArgs": [],
+          "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+        }
+      },
+
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+      },
+      {
+        "name": "Debug Legato application (launch)",
+        "type": "legato-launch",
+        "request": "launch",
+        "application": "myNewApp",
+        "executable": "myNewAppComponentExe"
+      },
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+      },
+
+
+
+      {
+        "name": "Debug Legato application (attach)",
+        "type": "legato-attach",
+        "request": "attach",
+        "application": "myNewApp",
+        "executable": "myNewAppComponentExe"
+      },
+      {
+        "name": ".NET Core Launch (console)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "${workspaceFolder}/bin/Debug/
+        /<project-name.dll>",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "stopAtEntry": false,
+        "console": "internalConsole"
+      },
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach",
+        "pipeTransport": {
+          "pipeCwd": "${workspaceFolder}",
+          "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+          "pipeArgs": [],
+          "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+        }
+      },
+
+
+        {
+            "name": "Attach to Process",
+            "type": "go",
+            "request": "attach",
+            "mode": "local",
+            "processId": 0
+        },
+        {
+            "name": "
+            ",
+            "type": "go",
+            "request": "attach",
+            "mode": "local",
+            "processId": 0
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "
+        "
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Legato application (launch)",
+            "type": "legato-launch",
+            "request": "launch",
+            "application": "myNewApp",
+            "executable": "myNewAppComponentExe"
+        },
+        {
+            "name": "Debug Legato application (attach)",
+            "type": "legato-attach",
+            "request": "attach",
+            "application": "myNewApp",
+            "executable": "myNewAppComponentExe"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        },
+      {
+        "name": "Attach to Process",
+        "type": "go",
+        "request": "attach",
+        "mode": "local",
+        "processId": 0
+      },
+
+
 
 
         {
@@ -43,3 +241,8 @@
         }
     ]
 }
+curl -v POST https: //api-m.sandbox.paypal.com/v1/oauth2/token \
+  -H "Accept: application/json" \
+  -H "Accept-Language: en_US" \
+  -u "Af5lAnj2yjUErKeDoTOIVrNgkIHZoGZt3DMHdRLE-tfau2B6RM8EGnPlijjd9OV4j-tFdVbyd7rMKhnh:ED1stRJkt9jVx7HsuyIFM2N9mlnWfDxknYtgmOfqA8HvshxJRyyUYBwt7fPReIbHUF8NZAS8YUlheOUM" \
+  -d "grant_type=client_credentials"
