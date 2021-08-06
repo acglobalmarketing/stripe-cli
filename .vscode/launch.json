@@ -5,6 +5,66 @@
     "version": "0.2.0",
     "configurations": [
       {
+        "name": "Launch Apex Replay Debugger",
+        "type": "apex-replay",
+        "request": "launch",
+        "logFile": "${command:AskForLogFileName}",
+        "stopOnEntry": true,
+        "trace": true
+      },
+      {
+        "type": "totvs_language_debug",
+        "request": "launch",
+        "name": "%tds.package.totvs_language_debug%",
+        "program": "${command:AskForProgramName}",
+        "programArguments": [
+          "${command:AskForProgramArguments}"
+        ],
+        "smartclientBin": "C:/totvs/bin/smartclient/smartclient.exe",
+        "isMultiSession": true,
+        "enableTableSync": true
+      },
+      {
+        "name": ".NET Core Launch (console)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "stopAtEntry": false,
+        "console": "internalConsole"
+      },
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+      },
+      {
+        "type": "totvs_language_debug",
+        "request": "launch",
+        "name": "%tds.package.totvs_language_debug%",
+        "program": "${command:AskForProgramName}",
+        "programArguments": [
+          "${command:AskForProgramArguments}"
+        ],
+        "smartclientBin": "C:/totvs/bin/smartclient/smartclient.exe",
+        "isMultiSession": true,
+        "enableTableSync": true
+      },
+      {
+        "type": "totvs_language_debug",
+        "request": "launch",
+        "name": "%tds.package.totvs_language_debug%",
+        "program": "${command:AskForProgramName}",
+        "programArguments": [
+          "${command:AskForProgramArguments}"
+        ],
+        "smartclientBin": "C:/totvs/bin/smartclient/smartclient.exe",
+        "isMultiSession": true,
+        "enableTableSync": true
+      },
+      {
         "name": ".NET Core Attach",
         "type": "coreclr",
         "request": "attach",
